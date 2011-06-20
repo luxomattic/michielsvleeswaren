@@ -4,6 +4,8 @@ Michielsvleeswaren::Application.routes.draw do
   get "pages/verkoop"
 
   get "pages/productie"
+  
+  get "pages/administratie"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

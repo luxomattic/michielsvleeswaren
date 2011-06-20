@@ -7,5 +7,8 @@ class PagesController < ApplicationController
 
   def productie
   end
+  
+  def administratie
+  end
 
 end
