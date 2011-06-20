@@ -1,0 +1,30 @@
+
+
+
+.jcarousel-skin-tango .jcarousel-next-horizontal {
+    position: absolute;
+    top: 80px;
+    right: -31px;
+    width: 38px;
+    height: 39px;
+    cursor: pointer;
+    background: transparent url(../assets/pijlrechts.jpg) no-repeat 0 0;
+}
+.jcarousel-skin-tango .jcarousel-next-horizontal:hover {
+ background: transparent url(../assets/pijlrechtshover.jpg) no-repeat 0 0;
+
+}
+.jcarousel-skin-tango .jcarousel-prev-horizontal {
+    position: absolute;
+    top: 80px;
+    left: -55px;
+    width: 38px;
+    height: 39px;
+    cursor: pointer;
+    background: transparent url(../assets/pijllinks.jpg) no-repeat 0 0;
+}
+.jcarousel-skin-tango .jcarousel-prev-horizontal:hover {
+	background: transparent url(../assets/pijllinkshover.jpg) no-repeat 0 0;
+	
+}
+
