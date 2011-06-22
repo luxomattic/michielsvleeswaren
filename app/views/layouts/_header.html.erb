@@ -1,0 +1,29 @@
+<div id="header">
+<div class="content">
+	<a href="index.html"><img class="logo" src="/assets/logo.png" width="381" height="83" alt="Logo Michiels" />
+	</a>
+	
+	<div class="menu">
+		<ul id="home">
+			<li class="home"><%= link_to_unless_current("Home", { :view => "home" }, :class => "menuitem") do
+				link_to("Home", { :view => "home" }, :class => "menuitem selected")
+			end
+			%></li>
+		</ul>
+		<ul class="items">
+			<li><%= link_to_unless_current("Verkoop", { :view => "verkoop" }, :class => "menuitem") do
+				link_to("Verkoop", { :view => "verkoop" }, :class => "menuitem selected")
+			end
+			%></li>
+			<li><%= link_to_unless_current("Productie", { :view => "productie" }, :class => "menuitem") do
+				link_to("Productie", { :view => "productie" }, :class => "menuitem selected")
+			end
+			%></li>
+			<li><%= link_to_unless_current("Administratie", { :view => "administratie" }, :class => "menuitem") do
+				link_to("Administratie", { :view => "administratie" }, :class => "menuitem selected")
+			end
+			%></li>
+		</ul>
+	</div><!--einde menu-->
+</div><!--einde content-->
+</div><!--einde header-->

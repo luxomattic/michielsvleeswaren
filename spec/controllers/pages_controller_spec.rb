@@ -3,6 +3,10 @@ require 'spec_helper'
 describe PagesController do
 	render_views
 
+  before(:each) do
+    @base_title = "Michiels Vleeswaren"
+  end
+  
   describe "GET 'home'" do
     it "should be successful" do
       get 'home'
@@ -12,7 +16,7 @@ describe PagesController do
     it "should have the right title" do
       get 'home'
       response.should have_selector("title",
-      :content => "Michiels Vleeswaren | Home")
+                                    :content => @base_title + " | Home")
     end
   end
 
@@ -25,7 +29,7 @@ describe PagesController do
     it "should have the right title" do
       get 'verkoop'
       response.should have_selector("title",
-      :content => "Michiels Vleeswaren | Verkoop")
+                                    :content => @base_title + " | Verkoop")
     end
   end
 
@@ -38,7 +42,7 @@ describe PagesController do
     it "should have the right title" do
       get 'productie'
       response.should have_selector("title",
-      :content => "Michiels Vleeswaren | Productie")
+                                    :content => @base_title + " | Productie")
     end
   end
   
@@ -51,7 +55,7 @@ describe PagesController do
     it "should have the right title" do
       get 'administratie'
       response.should have_selector("title",
-      :content => "Michiels Vleeswaren | Administratie")
+                                    :content => @base_title + " | Administratie")
     end
   end
 
