@@ -2,18 +2,18 @@
     <div class="content">
         <div class="menu2">
         <ul id="key">
-            <li class="key"><%= link_to_unless_current("Login", { :view => "login" }, :class => "menuitem") do
-				link_to("Login", { :view => "login" }, :class => "menuitem selected")
+            <li class="key"><%= link_to_unless_current("Login", '#', :class => "menuitem") do
+				link_to("Login", '#', :class => "menuitem selected")
 			end
 			%></li>
         </ul>
         <ul class="items">
-            <li><a title="Michiels Vleeswaren online" href="http://www.michiels-vleeswaren.be" class="menuitem">Michiels Vleeswaren</a></li>
-            <li><a title="Jac. Michiels online" href="http://www.jacmichiels.be" class="menuitem">Jac. Michiels</a></li>
-            <li><a title="De vereniging voor vlees en vleeswaren bedrijven" href="http://www.fenavian.be" class="menuitem">Fenavian</a></li>
-            <li><a title="FOD voedselveiligheid" href="http://www.favv.be" class="menuitem">FAVV</a></li>
-            <li><a title="De competentiepool van de Vlaamse Voedingsindustrie" href="http://www.flandersfood.com" class="menuitem">Flanders' Food</a></li>
+            <li><%= link_to "Michiels Vleeswaren", "http://www.michiels-vleeswaren.be", :class => "menuitem", :title => "Michiels Vleeswaren online"%></li>
+            <li><%= link_to "Jac. Michiels", "http://www.jacmichiels.be", :class => "menuitem", :title => "Jac. Michiels online"%></li>
+			<li><%= link_to "Fenavian", "http://www.fenavian.be", :class => "menuitem", :title => "De vereniging voor vlees en vleeswaren bedrijven"%></li>
+			<li><%= link_to "FAVV", "http://www.favv.be", :class => "menuitem", :title => "FOD Voedselveiligheid"%></li>
+			<li><%= link_to "Flanders' Food", "http://www.flandersfood.be", :class => "menuitem", :title => "De competentiepool van de Vlaamse Voedingsindustrie"%></li>
         </ul>
         </div><!--einde menu2-->
-    </div><!--einde content vd footer-->
+    </div><!--einde content-->
 </div><!--einde footer-->

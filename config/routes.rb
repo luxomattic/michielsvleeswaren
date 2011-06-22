@@ -1,4 +1,14 @@
 Michielsvleeswaren::Application.routes.draw do
+  root :to => 'pages#home'
+  
+  match '/home', :to => 'pages#home'
+  
+  match '/verkoop', :to => 'pages#verkoop'
+  
+  match '/productie', :to => 'pages#productie'
+  
+  match '/administratie', :to => 'pages#administratie'
+  
   get "pages/home"
 
   get "pages/verkoop"
