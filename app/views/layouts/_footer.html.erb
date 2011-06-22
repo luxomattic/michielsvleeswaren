@@ -2,8 +2,8 @@
     <div class="content">
         <div class="menu2">
         <ul id="key">
-            <li class="key"><%= link_to_unless_current("Login", '#', :class => "menuitem") do
-				link_to("Login", '#', :class => "menuitem selected")
+            <li class="key"><%= link_to_unless_current("Login", signup_path, :class => "menuitem") do
+				link_to("Login", signup_path, :class => "menuitem selected")
 			end
 			%></li>
         </ul>

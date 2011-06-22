@@ -11,10 +11,19 @@
 		<div id="main">
 			
 		<%= render 'layouts/headertop' %>
-		<%= render 'layouts/header' %>		
-		
-		<%= yield %>
+		<%= render 'layouts/header' %>
+
+		<div id="contentmiddle">
+			<div class="content">
+			</div>
+		</div><!-- einde contentmiddle -->
 				
+		<div id="contentbottom">
+			<div class="content">
+			<%= yield %>
+		    </div><!--einde content-->
+		</div><!--einde content v contentbottom-->
+			
 		<p class="clear"></p>
 		</div><!-- einde main -->
 				
