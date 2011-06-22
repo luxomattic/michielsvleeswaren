@@ -32,6 +32,7 @@ GEM
       activesupport (= 3.1.0.rc1)
     activesupport (3.1.0.rc1)
       multi_json (~> 1.0)
+    annotate-models (1.0.4)
     arel (2.1.1)
     autotest (4.4.6)
       ZenTest (>= 4.4.1)
@@ -113,7 +114,7 @@ GEM
     treetop (1.4.9)
       polyglot (>= 0.3.1)
     tzinfo (0.3.28)
-    uglifier (0.5.4)
+    uglifier (1.0.0)
       execjs (>= 0.3.0)
       multi_json (>= 1.0.2)
     webrat (0.7.1)
@@ -125,6 +126,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  annotate-models (= 1.0.4)
   autotest (= 4.4.6)
   autotest-fsevent (= 0.2.4)
   autotest-growl (= 0.2.9)
