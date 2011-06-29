@@ -1,4 +1,6 @@
 Michielsvleeswaren::Application.routes.draw do
+  
+  resources :users
 
   root :to => 'pages#home'
   
@@ -11,8 +13,6 @@ Michielsvleeswaren::Application.routes.draw do
   match '/administratie', :to => 'pages#administratie'
   
   match '/signup', :to => 'users#new'
-  
-  get "users/new"
   
   get "pages/home"
 

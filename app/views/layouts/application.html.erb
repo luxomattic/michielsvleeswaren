@@ -23,11 +23,13 @@
 			<%= yield %>
 		    </div><!--einde content-->
 		</div><!--einde content v contentbottom-->
-			
+		
 		<p class="clear"></p>
+	
 		</div><!-- einde main -->
-				
+					
 		<%= render 'layouts/footer' %>
+		<%= debug(params) if Rails.env.developement? %>
 				
 		</div><!-- einde wrap -->
 		
