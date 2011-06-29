@@ -21,6 +21,7 @@
 		<div id="contentbottom">
 			<div class="content">
 			<%= yield %>
+			<%= debug(params) if Rails.env.development? %>
 		    </div><!--einde content-->
 		</div><!--einde content v contentbottom-->
 		
@@ -29,7 +30,7 @@
 		</div><!-- einde main -->
 					
 		<%= render 'layouts/footer' %>
-		<%= debug(params) if Rails.env.developement? %>
+		
 				
 		</div><!-- einde wrap -->
 		
