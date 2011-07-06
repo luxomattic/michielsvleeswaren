@@ -763,8 +763,27 @@ body .menu3 ul.items a.selected {
 	top: -23px;
 }
 
+/* User show page */
 
+table.profile {
+	margin-bottom:0
+	;width:100%;
+}
 
+td.main {
+	width: 70%;
+	padding: 1em;
+}
+
+td.sidebar {
+	width: 30%;
+	padding: 1em;
+}
+
+.profile img.gravatar {
+	border: 1px solid #999;
+	margin-bottom: -15px;
+}
 
 /*  
 Sticky Footer Solution
