@@ -5,6 +5,18 @@ class UsersController < ApplicationController
   end
 
   def new
+    @user = User.new
     @title = "Gebruikers"
+  end
+  
+  def create
+    @user = User.new(params[:user])
+    if @user.save
+      flash[:success] = "Welkom bij Michiels Vleeswaren"
+      redirect_to @user
+    else
+      @title = "Sign up"
+      render 'new'
+    end
   end
 end

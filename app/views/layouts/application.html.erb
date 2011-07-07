@@ -20,7 +20,12 @@
 				
 		<div id="contentbottom">
 			<div class="content">
-			<%= yield %>
+			<section class="round">
+				<% flash.each do |key, value| %>
+					<div class="flash <%= key %>"><%= value %></div>
+				<% end %>
+				<%= yield %>
+			</section>
 			<%= debug(params) if Rails.env.development? %>
 		    </div><!--einde content-->
 		</div><!--einde content v contentbottom-->
