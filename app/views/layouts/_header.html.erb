@@ -10,6 +10,12 @@
 			%></li>
 		</ul>
 		<ul class="items">
+			<% if signed_in? %>
+			<li><%= link_to_unless_current("Profiel", current_user, :class => "menuitem") do
+				link_to("Profiel", current_user, :class => "menuitem selected")
+			end
+			%></li>						
+			<% end %>			
 			<li><%= link_to_unless_current("Verkoop", verkoop_path, :class => "menuitem") do
 				link_to("Verkoop", verkoop_path, :class => "menuitem selected")
 			end
@@ -22,7 +28,17 @@
 				link_to("Administratie", administratie_path, :class => "menuitem selected")
 			end
 			%></li>
-		</ul>
+			<% if signed_in? %>
+			<li><%= link_to_unless_current("Sign out", signout_path, :class => "menuitem") do
+				link_to("Sign out", signout_path, :class => "menuitem selected")
+			end
+			%></li>
+			<% else %>
+			<li><%= link_to_unless_current("Sign in", signin_path, :class => "menuitem") do
+				link_to("Sign in", signin_path, :class => "menuitem selected")
+			end
+			%></li>
+			<% end %>
 	</div><!--einde menu-->
 </div><!--einde content-->
 </div><!--einde header-->
