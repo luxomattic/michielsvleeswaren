@@ -1,9 +1,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
+	<%= csrf_meta_tag %>	
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  	<%= javascript_include_tag 'prototype', 'scriptaculous', 'application', 'jquery', 'http://fast.fonts.com/jsapi/ba25e6c1-2e2e-47bc-bcde-f97c37d623a6.js' %>
+	<script> var $j = jQuery.noConflict();
+	</script>
+	
 		<title><%= title %></title>
-		<%= csrf_meta_tag %>
 		<%= render 'layouts/stylesheets' %>
 	</head>
 	<body>
@@ -42,7 +46,7 @@
 		<div id="mti_wfs_colophon">
 		</div>
 
-<!--		<script type="text/javascript">
+		<script type="text/javascript">
 		  var _gaq = _gaq || [];
 		  _gaq.push(['_setAccount', 'UA-9957234-39']);
 		  _gaq.push(['_trackPageview']);
@@ -52,7 +56,7 @@
 		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		  })();
-		</script>-->
+		</script>
 
 	</body>
 </html>

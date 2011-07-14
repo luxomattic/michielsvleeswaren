@@ -868,6 +868,14 @@ html {
 	list-style: square;
 }
 
+ul.users {
+	margin-top: 1em;
+}
+
+.users li {
+	list-style: none;
+}
+
 /* IMPORTANT
 
 You also need to include this conditional style in the <head> of your HTML file to feed this style to IE 6 and lower and 8 and higher.

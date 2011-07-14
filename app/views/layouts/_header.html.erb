@@ -10,12 +10,22 @@
 			%></li>
 		</ul>
 		<ul class="items">
+			
 			<% if signed_in? %>
 			<li><%= link_to_unless_current("Profiel", current_user, :class => "menuitem") do
 				link_to("Profiel", current_user, :class => "menuitem selected")
 			end
-			%></li>						
-			<% end %>			
+			%></li>	
+			<li><%= link_to_unless_current("Users", users_path, :class => "menuitem") do
+				link_to("Users", users_path, :class => "menuitem selected")
+			end
+			%></li>
+			<li><%= link_to_unless_current("Settings", edit_user_path(current_user), :class => "menuitem") do
+				link_to("Settings", edit_user_path(current_user), :class => "menuitem selected")
+			end
+			%></li>					
+			<% end %>
+						
 			<li><%= link_to_unless_current("Verkoop", verkoop_path, :class => "menuitem") do
 				link_to("Verkoop", verkoop_path, :class => "menuitem selected")
 			end
